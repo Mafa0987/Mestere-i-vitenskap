@@ -249,7 +249,5 @@ encoded_data3_fast = run_length_encoder(datas[2], 63)
 print("encoded data3 gain fast = ",len(encoded_data3_fast)/len(datas[2]))
 print("encoded data3 size = ",len(encoded_data3_fast))
 
-#using 7zip we get a file with size 1.56 Mb compared to our which is 1.84 Mb
-    
-
-
+# using 7zip we get a file with size 1.56 Mb compared to our which is 1.64 Mb
+# the size depends on the n value, the might exist a more optimal n value
