@@ -1,5 +1,6 @@
 import numpy as np
 import datetime
+import os
 
 P_Y = np.array([1/4, 1-1/4])
 P_XgivenY = np.array([[1/2,1/2], # Rows: X=x, Columns Y=y
@@ -52,6 +53,7 @@ steady_state_distribution = get_stationary_distribution(transition_matrix)
 print("entropy rate is ", get_entropy_rate(transition_matrix))
 
 ######################################################################################################
+path = os.getcwd()
 data1 = np.loadtxt("data1.txt")
 data1 = [str(int(i)) for i in data1]
 data2 = np.loadtxt("data2.txt")
