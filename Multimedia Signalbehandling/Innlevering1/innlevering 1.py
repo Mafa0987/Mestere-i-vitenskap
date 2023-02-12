@@ -51,7 +51,7 @@ steady_state_distribution = get_stationary_distribution(transition_matrix)
 
 print("entropy rate is ", get_entropy_rate(transition_matrix))
 
-#######################################################################################################
+######################################################################################################
 data1 = np.loadtxt("data1.txt")
 data1 = [str(int(i)) for i in data1]
 data2 = np.loadtxt("data2.txt")
